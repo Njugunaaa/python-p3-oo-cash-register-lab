@@ -6,7 +6,7 @@ class CashRegister:
         self.items = [] if items is None else items
         self.discount = discount
         self.last_transaction_amount = 0
-        
+        #To be revisited
     def add_item(self, item_name, item_price, quantity=1):
         self.last_transaction_amount = item_price * quantity
         for _ in range(quantity):
